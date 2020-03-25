@@ -105,5 +105,20 @@ gui.drawBox(1,140, 39, 148, "white", 0xA000120e)
 end
 gui.drawBox(1,140, 39, 148, "white", 0xA000916f)
 gui.pixelText(2,141, "Warp Menu","white", 0x00000009)
+
+if wmm["Left"] and  wmm["X"] >= 40+1 and wmm["X"] <= 40+39 and wmm["Y"] >= 140 and wmm["Y"] <= 148 then
+if warpmenuswitch == false then
+ogmode = not ogmode
+warpmenuswitch = true
+end
+end
+
+if ogmode == false then
+gui.drawBox(40+1,140, 40+11, 148, "white", 0xA0b30000)
+elseif ogmode == true then
+gui.drawBox(40+1,140, 40+11, 148, "white", 0xA0009900)
+end
+
+gui.pixelText(40+2,141, "OG","white", 0x00000009)
 end
 end

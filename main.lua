@@ -30,6 +30,9 @@ warpmenuswitch = false
 aID = 0x00
 rID = 0x00
 
+-- OG Variables
+ogmode = false
+
 local mouse ={}
 local namePrevious = ""
 local xCursor,yCursor = 0,0
