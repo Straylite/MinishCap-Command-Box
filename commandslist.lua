@@ -1,4 +1,5 @@
 require("extension\\items")
+require("extension\\roomlist")
 require("commands\\rupee")
 require("commands\\resetroom")
 require("commands\\pos")

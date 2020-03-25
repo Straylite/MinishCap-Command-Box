@@ -1,6 +1,6 @@
 function helpbox()
-helpmouse = input.getmouse()
-if helpmouse["X"] >= 102 and helpmouse["X"] <= 112 and helpmouse["Y"] >= 150 and helpmouse["Y"] <= 158 and helpmouse["Left"] and helpswitch == false then
+hm = input.getmouse()
+if hm["X"] >= 102 and hm["X"] <= 112 and hm["Y"] >= 150 and hm["Y"] <= 158 and hm["Left"] and helpswitch == false then
 help = not help
 helpswitch = true
 end
@@ -22,9 +22,9 @@ end
 if helpx > 0 then helpx = 0 
 elseif helpx < 0-138 then helpx = 0-138 end
 
-if helpmouse["X"] >= 100 and helpmouse["X"] <= 110 and helpmouse["Y"] >= 8 and helpmouse["Y"] <= 18 and helpmouse["Left"] then
+if hm["X"] >= 100 and hm["X"] <= 110 and hm["Y"] >= 8 and hm["Y"] <= 18 and hm["Left"] then
 helpx = helpx+6
-elseif helpmouse["X"] >= 112 and helpmouse["X"] <= 121 and helpmouse["Y"] >= 8 and helpmouse["Y"] <= 18 and helpmouse["Left"] then
+elseif hm["X"] >= 112 and hm["X"] <= 121 and hm["Y"] >= 8 and hm["Y"] <= 18 and hm["Left"] then
 helpx = helpx-6
 end
 
@@ -34,5 +34,6 @@ if help == true then
 	gui.pixelText(128+95+helpx,25, "godmode\n\n\nsavepos 	(name)\nloadpos 	(name)\nresetpos\n\nredhouse 	nayru\n 		farore\n 		din\nbluehouse 	nayru\n 		farore\n 		din\n\ndisplay 	rng\nrnglock 	on/off\nrngset 		(x)             ", "white")
 end
 
-if not helpmouse["Left"] then helpswitch = false end
+if not hm["Left"] then helpswitch = false end
 end
+

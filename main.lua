@@ -1,6 +1,7 @@
 require("commandslist")
 require("extension\\help")
 require("extension\\commandbox")
+require("extension\\warpmenu")
 
 -- Godmode Variables
 god = false
@@ -21,6 +22,14 @@ commandSwitch = false
 name = ""
 typestripe = {"_",0}
 
+-- Warp Menu Variables
+areatext = ""
+roomtext = ""
+warpmenu = false
+warpmenuswitch = false
+aID = 0x00
+rID = 0x00
+
 local mouse ={}
 local namePrevious = ""
 local xCursor,yCursor = 0,0
@@ -37,6 +46,7 @@ local key = {}
 
 ------------------------------------------------------------------------------------
 while true do
+
 -- God Mode Functions
 godmodebase()
 
@@ -49,6 +59,10 @@ helpbox()
 
 -- Command Functions
 entercommand()
+
+-- Warp Menu
+warpmenufunction()
+warptext()
 
 -- Command Box
 local mouse = input.getmouse()
