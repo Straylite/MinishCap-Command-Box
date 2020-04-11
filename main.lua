@@ -15,7 +15,7 @@ rnggui = false
 help = false
 helpswitch = false
 helpx = 0
-
+--
 -- Command Variables
 commandState = false
 commandSwitch = false
@@ -133,6 +133,5 @@ do
 		end
 	end
 end
-
 	emu.frameadvance()
 end
