@@ -31,7 +31,7 @@ end
 if help == true then
 	gui.pixelText(7+helpx,25, "Commands: \n\nhave	all \nlose	all \n\nrefill	hearts \nrupee	(x) \nreset	room \ntoggle	minish \n\nfight	big green chu\n 	big blue chu\n 	gleerok\n 	mazaal\n 	big octorok\n	gyorg pair\n 	vaati               ", "white")
 	gui.pixelText(95+helpx,25, "pos 	(x) (y) \n\nbombs 	(x)\narrows 	(x)\n\njump\ncharm 	nayru\n 	din\n 	farore\nwallet 	100\n 	300\n 	500\n 	999\nbottle 	(x[1-4]) (itemid)\nhearts 	all\nwarp 	(0xAREA ID) (0xROOM ID)\nnewname 	type new name          ", "white")
-	gui.pixelText(128+95+helpx,25, "godmode\n\n\nsavepos 	(name)\nloadpos 	(name)\nresetpos\n\nredhouse 	nayru\n 		farore\n 		din\nbluehouse 	nayru\n 		farore\n 		din\n\ndisplay 	rng\nrnglock 	on/off\nrngset 		(x)             ", "white")
+	gui.pixelText(128+95+helpx,25, "godmode\nog		on/off\nsavepos 	(name)\nloadpos 	(name)\nresetpos\n\nredhouse 	nayru\n 		farore\n 		din\nbluehouse 	nayru\n 		farore\n 		din\n\ndisplay 	rng\nrnglock 	on/off\nrngset 		(x)             ", "white")
 end
 
 if not hm["Left"] then helpswitch = false end
