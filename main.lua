@@ -42,9 +42,9 @@ local charInputs = {{},{},{}}
 	for i=1,10 do table.insert(charInputs[1],"NumberPad"..tostring(i-1)) end
     for i=1,26 do table.insert(charInputs[1],string.char(i+0x40)) end
 	table.insert(charInputs[1],"Space")
-	table.insert(charInputs[1],"Backspace")    
+	table.insert(charInputs[1],"BackSpace")    
 	
-local otherInputs = {{"Return","Escape","LeftArrow","RightArrow","UpArrow","DownArrow"},{},{}}
+local otherInputs = {{"Enter","Escape","LeftArrow","RightArrow","UpArrow","DownArrow"},{},{}}
 local key = {}
 
 ------------------------------------------------------------------------------------
@@ -110,7 +110,7 @@ do
 		if key[s] ~= previousInputs[s] then
 			previousInputs[s] = key[s]
 			if key[s] == true then
-				if s == "Return" then
+				if s == "Enter" then
 
 					if commandState and name ~= "" then
 						local args = {}
