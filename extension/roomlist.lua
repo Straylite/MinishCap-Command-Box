@@ -6,10 +6,10 @@ function warptext()
 	if help == false and warpmenu == true then	
 		--areatext = Locations[aID][1]
 		--roomtext = Locations[aID][2][rID]
-		gui.drawBox(1-2,115, 297, 123, 0x00FFFFFF, 0xA0457599)
-		gui.drawBox(1-2,122, 297, 130, 0x00FFFFFF, 0xA000589c)
-		gui.pixelText(2,x+2, areatext, "white", 0x60000000)
-		gui.pixelText(2,x+9, roomtext, "white", 0x60000066)
+		gui.drawBox(1-2,downside+115, 297, downside+123, 0x00FFFFFF, 0xA0457599)
+		gui.drawBox(1-2,downside+122, 297, downside+130, 0x00FFFFFF, 0xA000589c)
+		gui.pixelText(2,downside+x+2, areatext, "white", 0x60000000)
+		gui.pixelText(2,downside+x+9, roomtext, "white", 0x60000066)
 		
 		if aID == 0 then areatext = "Minish Woods"
 			if rID == 0 then roomtext = "Main"

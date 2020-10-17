@@ -1,16 +1,16 @@
 function helpbox()
 hm = input.getmouse()
-if hm["X"] >= 102 and hm["X"] <= 112 and hm["Y"] >= 150 and hm["Y"] <= 158 and hm["Left"] and helpswitch == false then
+if hm["X"] >= 102 and hm["X"] <= 112 and hm["Y"] >= downside+150 and hm["Y"] <= downside+158 and hm["Left"] and helpswitch == false then
 help = not help
 helpswitch = true
 end
 
 if help == false then
-gui.drawBox(102, 150, 112, 158, "white", 0x45363fe3)
-gui.pixelText(105, 151, "?", "white", 0x00000000)
+gui.drawBox(102, downside+150, 112, downside+158, "white", 0x45363fe3)
+gui.pixelText(105, downside+151, "?", "white", 0x00000000)
 elseif help == true then
-gui.drawBox(102, 150, 112, 158, "white", 0x85363fe3)
-gui.pixelText(105, 151, "?", "white", 0x00000000)
+gui.drawBox(102, downside+150, 112, downside+158, "white", 0x85363fe3)
+gui.pixelText(105, downside+151, "?", "white", 0x00000000)
 
 gui.drawBox(100,8, 110,18, "white", 0x85363fe3)
 gui.pixelText(103, 10, "<", "white", 0x00000000)
